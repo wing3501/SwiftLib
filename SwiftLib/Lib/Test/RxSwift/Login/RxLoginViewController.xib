@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RxLoginViewController" customModule="SwiftLib" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="e1g-Pu-3js" id="b7w-PD-UAY"/>
+                <outlet property="nameLabel" destination="5sy-C2-HE4" id="WqI-An-IhQ"/>
+                <outlet property="passwordTextField" destination="R6G-Nt-foI" id="95e-3O-jFP"/>
+                <outlet property="usernameTextField" destination="UDM-af-cjV" id="mhG-aa-8a5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJ4-2S-OvL">
+                    <rect key="frame" x="30" y="72" width="80" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="utM-XM-qp3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5u-BA-KLa">
+                    <rect key="frame" x="30" y="145" width="35" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UDM-af-cjV">
+                    <rect key="frame" x="146" y="67" width="189" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sy-C2-HE4">
+                    <rect key="frame" x="146" y="105" width="189" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R6G-Nt-foI">
+                    <rect key="frame" x="146" y="140.5" width="189" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1g-Pu-3js">
+                    <rect key="frame" x="87" y="279" width="200" height="30"/>
+                    <color key="backgroundColor" red="0.058216423423325336" green="0.11289467353854421" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="3ss-Hf-xz2"/>
+                    </constraints>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e1g-Pu-3js" firstAttribute="top" secondItem="R6G-Nt-foI" secondAttribute="bottom" constant="108.5" id="0gE-C4-V24"/>
+                <constraint firstItem="R6G-Nt-foI" firstAttribute="leading" secondItem="UDM-af-cjV" secondAttribute="leading" id="3xT-Ic-aT9"/>
+                <constraint firstItem="CJ4-2S-OvL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="52" id="53g-XE-wvr"/>
+                <constraint firstItem="d5u-BA-KLa" firstAttribute="leading" secondItem="CJ4-2S-OvL" secondAttribute="leading" id="5zN-VM-ATu"/>
+                <constraint firstItem="d5u-BA-KLa" firstAttribute="top" secondItem="CJ4-2S-OvL" secondAttribute="bottom" constant="52" id="EHs-Ao-KWP"/>
+                <constraint firstItem="CJ4-2S-OvL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="JHJ-2J-Hcc"/>
+                <constraint firstItem="5sy-C2-HE4" firstAttribute="top" secondItem="UDM-af-cjV" secondAttribute="bottom" constant="8" id="LiV-CB-2rJ"/>
+                <constraint firstItem="R6G-Nt-foI" firstAttribute="centerY" secondItem="d5u-BA-KLa" secondAttribute="centerY" id="Qo7-X1-ap3"/>
+                <constraint firstItem="UDM-af-cjV" firstAttribute="centerY" secondItem="CJ4-2S-OvL" secondAttribute="centerY" id="TFC-H9-bTG"/>
+                <constraint firstItem="5sy-C2-HE4" firstAttribute="leading" secondItem="UDM-af-cjV" secondAttribute="leading" id="UJR-cr-Omx"/>
+                <constraint firstItem="5sy-C2-HE4" firstAttribute="width" secondItem="UDM-af-cjV" secondAttribute="width" id="UY6-lc-a4k"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UDM-af-cjV" secondAttribute="trailing" constant="40" id="o84-MN-3AC"/>
+                <constraint firstItem="R6G-Nt-foI" firstAttribute="trailing" secondItem="UDM-af-cjV" secondAttribute="trailing" id="s0q-cp-XwC"/>
+                <constraint firstItem="e1g-Pu-3js" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wrI-KC-UJs"/>
+                <constraint firstItem="UDM-af-cjV" firstAttribute="leading" secondItem="CJ4-2S-OvL" secondAttribute="trailing" constant="36" id="x9t-66-Rd9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="STLeftHeader" customModule="SwiftLib" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timg" translatesAutoresizingMaskIntoConstraints="NO" id="X4V-FD-cUj">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="200"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="UXI-Nm-RC2">
+                    <rect key="frame" x="15" y="135" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ocx-D3-ob5"/>
+                        <constraint firstAttribute="width" secondItem="UXI-Nm-RC2" secondAttribute="height" multiplier="1:1" id="Z2O-Eg-sz7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w62-ZS-S8u">
+                    <rect key="frame" x="80" y="149" width="145" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="w62-ZS-S8u" firstAttribute="centerY" secondItem="UXI-Nm-RC2" secondAttribute="centerY" id="5o2-Qy-RCc"/>
+                <constraint firstItem="X4V-FD-cUj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ECb-2e-2TM"/>
+                <constraint firstItem="X4V-FD-cUj" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="Fhm-1L-Bwc"/>
+                <constraint firstAttribute="trailing" secondItem="w62-ZS-S8u" secondAttribute="trailing" constant="15" id="JCz-OY-P2E"/>
+                <constraint firstItem="UXI-Nm-RC2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="K8r-Pq-qAi"/>
+                <constraint firstItem="w62-ZS-S8u" firstAttribute="leading" secondItem="UXI-Nm-RC2" secondAttribute="trailing" constant="15" id="Q2I-wK-Po8"/>
+                <constraint firstAttribute="bottom" secondItem="UXI-Nm-RC2" secondAttribute="bottom" constant="15" id="QUm-pv-lDm"/>
+                <constraint firstItem="X4V-FD-cUj" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="V1N-HP-hKY"/>
+                <constraint firstItem="X4V-FD-cUj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZPB-b6-bGd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="32.5" y="60.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="200" height="200"/>
+        <image name="timg" width="1024" height="727"/>
+    </resources>
+</document>
